@@ -1,0 +1,17 @@
+
+.sa-titulo {
+  /*propiedad: valor de la propiedad*/
+  color: darkgrey;
+  border-style: solid;
+  background-color: darkmagenta;
+  border-color: black;
+  border-width: initial;
+}
+.sa-subtitulo {
+  /*propiedad: valor de la propiedad*/
+  color: darkgrey;
+  border-style: solid;
+  background-color: cyan;
+  border-color: black;
+  border-width: initial;
+}
