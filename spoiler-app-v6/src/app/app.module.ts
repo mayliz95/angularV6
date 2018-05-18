@@ -8,6 +8,7 @@ import { BotonPruebaComponent } from './Boton-Bootstrap/boton-prueba/boton-prueb
 import { GrillaComponent } from './grilla/grilla.component';
 import { MenuSuperiorComponent } from './menu-superior/menu-superior.component';
 import { MenuInferiorComponent } from './menu-inferior/menu-inferior.component';
+import { PeliculaBordeRedondoComponent } from './pelicula-borde-redondo/pelicula-borde-redondo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MenuInferiorComponent } from './menu-inferior/menu-inferior.component';
     BotonPruebaComponent,
     GrillaComponent,
     MenuSuperiorComponent,
-    MenuInferiorComponent
+    MenuInferiorComponent,
+    PeliculaBordeRedondoComponent
   ], //Definir todos lo componentes a usarse
   imports: [
     BrowserModule,

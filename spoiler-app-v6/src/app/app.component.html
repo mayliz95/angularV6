@@ -3,8 +3,19 @@
   <app-menu-inferior></app-menu-inferior>
 </div>
 <div class="row">
-  <div class="col-sm-6"><app-pelicula-banner></app-pelicula-banner></div>
-  <div class="col-sm-6"><app-pelicula-banner></app-pelicula-banner></div>
+  <div class="col-sm-6 text-center" *ngFor="let pelicula of arregloPeliculas; let indice=index">
+    <!--img [src]="pelicula.imagen" [alt]="pelicula.descripcion">
+    <h1>{{pelicula.nombre}} / {{pelicula.esEstreno}}</h1>
+    <p>{{pelicula.descripcion}}</p-->
+    <app-pelicula-banner [urlImagen]="pelicula.urlImagen"
+                         [descripcionImagen]="pelicula.descripcion"
+                         [nombrePelicula]="pelicula.nombre"
+                         [descripcionPelicula]="pelicula.descripcion"
+                         [esEstreno]="pelicula.esEstreno"
+                         (dioClickEnEstado)="alertar($event)"
+    ></app-pelicula-banner>
+    <button (click) ="pelicula.esEstreno=!pelicula.esEstreno">Cambiar es estreno </button>
+  </div>
 </div>
 <div class="row">
   <div class="col-sm-3"><app-pelicula-banner></app-pelicula-banner></div>

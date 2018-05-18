@@ -1,7 +1,8 @@
-<div class="sa-fondo-pelicula-banner sa-color-letras-pelicula-banner">
-  <img [src]="urlImagen" [alt]="descripcionImagen" class="fillwidth">
+<h5>{{esEstreno}}</h5>
+<div class="sa-fondo-pelicula-banner sa-color-letras-pelicula-banner" [style.background-image]="'url('+urlImagen+')'">
+  <div class="sa-espaciado"></div>
+  <p (click)="hizoClickEnEstado()"
+    [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
   <h1>{{nombrePelicula}}</h1>
   <p>{{descripcionPelicula}}</p>
-  <p class="'sa-fondo-estado ' + claseEstreno">{{textoEsterno}}</p>
-
 </div>
