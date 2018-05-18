@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuSuperiorComponent implements OnInit {
 
-  itemMenuSuperior = "Musica";
+  itemsMenuSuperior = ["Música", "Audio Latino", "Ver los Simpsons", "Facebook", "Twitter", "Ingresar"];
+  //itemMenuSuperior = "Musica";
   constructor() { }
+
   ngOnInit() {
   }
 

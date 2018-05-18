@@ -14,3 +14,9 @@ sa-color-estado-rosado {
 sa-color-estado-amarillo {
   background-color: #fabb00;
 }
+
+.fillwidth {
+  min-width: 100%;
+  height: auto;
+}
+

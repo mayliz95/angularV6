@@ -7,6 +7,7 @@ import { PeliculaBannerComponent } from './Peliculas/pelicula-banner/pelicula-ba
 import { BotonPruebaComponent } from './Boton-Bootstrap/boton-prueba/boton-prueba.component';
 import { GrillaComponent } from './grilla/grilla.component';
 import { MenuSuperiorComponent } from './menu-superior/menu-superior.component';
+import { MenuInferiorComponent } from './menu-inferior/menu-inferior.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuSuperiorComponent } from './menu-superior/menu-superior.component';
     PeliculaBannerComponent,
     BotonPruebaComponent,
     GrillaComponent,
-    MenuSuperiorComponent
+    MenuSuperiorComponent,
+    MenuInferiorComponent
   ], //Definir todos lo componentes a usarse
   imports: [
     BrowserModule,
