@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
@@ -9,6 +10,9 @@ import { GrillaComponent } from './grilla/grilla.component';
 import { MenuSuperiorComponent } from './menu-superior/menu-superior.component';
 import { MenuInferiorComponent } from './menu-inferior/menu-inferior.component';
 import { PeliculaBordeRedondoComponent } from './pelicula-borde-redondo/pelicula-borde-redondo.component';
+import {ButtonModule} from "primeng/button";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatButtonModule, MatCheckboxModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -22,7 +26,12 @@ import { PeliculaBordeRedondoComponent } from './pelicula-borde-redondo/pelicula
   ], //Definir todos lo componentes a usarse
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot(),
+    ButtonModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule
   ], //Definir todos los modulos a usarse
   providers: [], //Definir todos los servicios
   bootstrap: [AppComponent]
